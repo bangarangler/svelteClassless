@@ -8,6 +8,12 @@ import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
 import autoPreprocess from "svelte-preprocess";
 
+const preprocess = autoPreprocess({
+  postcss: {
+    plugins: [require("postcss-import")(), require("postcss-nested")()],
+  },
+});
+
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
@@ -30,7 +36,7 @@ export default {
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess: autoPreprocess(),
+        preprocess,
       }),
       resolve({
         browser: true,
@@ -81,6 +87,7 @@ export default {
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
+        preprocess,
         generate: "ssr",
         dev,
       }),
