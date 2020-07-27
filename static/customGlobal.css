@@ -38,10 +38,19 @@ body {
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.65;
+  background: var(--background);
 }
 
 p {
   margin-bottom: 1.15rem;
+  max-width: 40em;
+}
+
+p a,
+blockquote a {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: solid 2px var(--green);
 }
 
 h1,
@@ -86,4 +95,11 @@ small,
 .dark {
   --background: var(--black);
   --textColor: var(--lightGray);
+}
+
+blockquote {
+  /* border: solid 1px var(--darkBlue); */
+  margin: 10px;
+  padding: 2em;
+  background: white;
 }
