@@ -9,6 +9,7 @@
     font-size: var(--baseFontSize);
     margin: 0;
   }
+
   footer .fake-logo {
     margin-bottom: 2%;
   }

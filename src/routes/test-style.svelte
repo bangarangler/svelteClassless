@@ -65,6 +65,17 @@
   </ul>
 </div>
 
+<div class="card">
+  <h3>Card Heading</h3>
+  <p>
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua.
+  </p>
+  <button>Accept</button>
+</div>
+
+<hr />
+
 <form class="grid cols-3">
   <div>
     <label for="text">Text</label>
@@ -91,6 +102,7 @@
     <option value="three">Three</option>
   </select>
 </div>
+
 <button>Submit</button>
 <button class="cancel">Cancel</button>
 <button disabled>Disabled</button>
