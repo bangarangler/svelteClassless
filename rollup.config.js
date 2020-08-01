@@ -33,10 +33,10 @@ export default {
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
+        preprocess,
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess,
       }),
       resolve({
         browser: true,

@@ -7,13 +7,19 @@
     font-family: var(--slantText);
     font-size: var(--smallTextSize);
   }
-  
 </style>
 
 <h1>Test Classless Styles</h1>
 
 <p>
-Lorem ipsum dolor sit amet, <a href="/about">consectetur</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet,
+  <a href="/about">consectetur</a>
+  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+  deserunt mollit anim id est laborum.
 </p>
 
 <h2>Test Classless Styles</h2>
@@ -26,8 +32,16 @@ Lorem ipsum dolor sit amet, <a href="/about">consectetur</a> adipiscing elit, se
 
 <p class="stylish-small">This text should be supper pretty</p>
 
-<blockquote> 
-Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="/about">consectetur</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<blockquote>
+  Lorem ipsum dolor sit amet,
+  <strong>consectetur</strong>
+  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+  <a href="/about">consectetur</a>
+  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+  officia deserunt mollit anim id est laborum.
 </blockquote>
 <hr />
 
@@ -41,20 +55,27 @@ Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do
 
 <div>
   <label for="text">Text</label>
-  <input id="text" type="text"/>
+  <input id="text" type="text" placeholder="Jon Palacio" />
 </div>
 <div>
   <label for="number">Number</label>
-  <input id="number" type="number"/>
+  <input id="number" type="number" />
 </div>
 <div>
   <label for="email">Email</label>
-  <input id="email" type="email"/>
+  <input id="email" type="email" />
 </div>
-<select>
-  <option>One</option>
-  <option>Two</option>
-  <option>Three</option>
-</select>
+<div>
+  <label for="textarea">Textarea</label>
+  <textarea id="textarea">Default Value</textarea>
+</div>
+<div>
+  <label for="select">Select</label>
+  <select id="select" type="text">
+    <option value="one">One</option>
+    <option value="two">Two</option>
+    <option value="three">Three</option>
+  </select>
+</div>
 <button>Submit</button>
 <button>Cancel</button>
