@@ -11,6 +11,7 @@
   --gray: #bfbfbf;
   --lightGray: #f2f4f6;
   --white: #fff;
+  --darkGray: #222;
 
   /* COLORS INTENTIONS */
 	--primary: var(--green);
@@ -19,6 +20,9 @@
   --textColor: var(--black);
   --lineColor: var(--gray);
   --cardBG: var(--white);
+  --headerBG: var(--darkBlue);
+  --btnTextColor: var(--textColor);
+  --footerBG: var(--black);
 
   /* STYLES */
   --line: 1px solid var(--lineColor);
@@ -67,8 +71,6 @@ body {
 	color: var(--textColor);
 }
 header {
-	--headerBG: var(--darkBlue);
-
 	color: white;
 	position: fixed;
 	left: 0;
@@ -94,7 +96,7 @@ footer {
 	--footerTextColor: var(--lightGray);
 
 	color: var(--footerTextColor);
-	background: var(--black);
+	background: var(--footerBG);
 	padding: 2rem var(--containerPadding);
 	text-align: center;
 }
@@ -111,7 +113,7 @@ p {
 }
 p a,
 blockquote a {
-  color: var(--black);
+  color: var(--textColor);
   text-decoration: none;
   border-bottom: solid 2px var(--primary);
 }
@@ -146,10 +148,6 @@ small,
   font-size: var(--smallTextSize);
 }
 /* END TYPE-SCALE */
-.dark {
-  --background: var(--black);
-  --textColor: var(--lightGray);
-}
 blockquote {
   /* border: solid 1px var(--darkBlue); */
   margin: 10px;
@@ -181,7 +179,6 @@ hr {
 }
 button {
 	--btnColor: var(--primary);
-	--btnTextColor: var(--textColor);
 
   appearance: none;
   color: var(--btnTextColor);
@@ -249,4 +246,12 @@ button.small {
 /* last item will never have margin bottom */
 .card > *:last-child {
   margin-bottom: 0;
+}
+.dark {
+  --cardBG: var(--darkGray);
+  --background: var(--black);
+  --textColor: var(--lightGray);
+  --headerBG: var(--darkGray);
+  --btnTextColor: var(--black);
+  --footerBG: var(--darkGray);
 }
