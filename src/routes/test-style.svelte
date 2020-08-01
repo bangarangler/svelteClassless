@@ -46,25 +46,39 @@
 <hr />
 
 <p class="stylish">This text should be supper pretty</p>
+<div class="grid">
 
-<ul>
-  <li>item here</li>
-  <li>another item here</li>
-  <li>last item for now</li>
-</ul>
+  <p>
+    Lorem ipsum dolor sit amet,
+    <a href="/about">consectetur</a>
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.
+  </p>
+  <ul>
+    <li>item here</li>
+    <li>another item here</li>
+    <li>last item for now</li>
+  </ul>
+</div>
 
-<div>
-  <label for="text">Text</label>
-  <input id="text" type="text" placeholder="Jon Palacio" />
-</div>
-<div>
-  <label for="number">Number</label>
-  <input id="number" type="number" />
-</div>
-<div>
-  <label for="email">Email</label>
-  <input id="email" type="email" />
-</div>
+<form class="grid cols-3">
+  <div>
+    <label for="text">Text</label>
+    <input id="text" type="text" placeholder="Jon Palacio" />
+  </div>
+  <div>
+    <label for="number">Number</label>
+    <input id="number" type="number" />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input id="email" type="email" />
+  </div>
+</form>
 <div>
   <label for="textarea">Textarea</label>
   <textarea id="textarea">Default Value</textarea>
@@ -78,4 +92,9 @@
   </select>
 </div>
 <button>Submit</button>
-<button>Cancel</button>
+<button class="cancel">Cancel</button>
+<button disabled>Disabled</button>
+<button>Button with long text</button>
+<button>Button &xrarr;</button>
+<br />
+<button class="small">Small</button>
