@@ -3,9 +3,20 @@
     font-family: var(--slantText);
     font-size: var(--h3);
   }
+
   .stylish-small {
     font-family: var(--slantText);
     font-size: var(--smallTextSize);
+  }
+
+  .addSpace {
+    margin-bottom: 5%;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-gap: 20px;
   }
 </style>
 
@@ -27,6 +38,21 @@
 <h4>Hello World</h4>
 <h5>Hello World</h5>
 <h6>Hello World</h6>
+
+<div class="split">
+  <aside>
+    <p>
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.
+    </p>
+  </aside>
+  <p>
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum.
+  </p>
+</div>
 
 <hr />
 
@@ -65,7 +91,7 @@
   </ul>
 </div>
 
-<div class="card">
+<div class="card addSpace">
   <h3>Card Heading</h3>
   <p>
     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
