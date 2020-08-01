@@ -41,13 +41,22 @@
 	--level3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	--level4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
+	/* POSITIONING */
+	--containerPadding: 2.5%;
+	--headerHeight: 3rem;
 }
-
 
 /* FROM TYPE-SCALE */
 html {
   font-size: var(--baseFontSize);
-} /*18px*/
+	box-sizing: border-box;
+} /*18px Desktop*/
+
+*,
+*::before,
+	*::after {
+		box-sizing: inherit;
+	}
 
 body {
   font-family: var(--bodyFont);
@@ -57,6 +66,33 @@ body {
   /* TODO: remove this  */
   padding-bottom: 300px;
 	color: var(--textColor);
+}
+
+header {
+	--headerBG: var(--darkBlue);
+
+	color: white;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: var(--headerHeight);
+	background: var(--headerBG);
+	box-shadow: var(--level2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 var(--containerPadding);
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* handles spacing of nav items */
+header nav a + a {
+	margin-left: 10px;
 }
 
 p {
@@ -184,8 +220,7 @@ button.small {
 }
 
 .layout {
-	margin: 0 auto;
-	width: 95%;
+	padding: calc(3rem + var(--headerHeight)) var(--containerPadding);
 }
 
 .grid {

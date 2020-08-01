@@ -4,7 +4,17 @@
   export let segment;
 </script>
 
-<Nav {segment} />
+<style>
+  .fake-logo {
+    font-size: var(--baseFontSize);
+    margin: 0;
+  }
+</style>
+
+<header>
+  <h1 class="fake-logo">Fake Logo</h1>
+  <Nav {segment} />
+</header>
 
 <main class="layout">
   <slot />
