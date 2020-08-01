@@ -118,3 +118,11 @@ select {
 hr {
   border-top: var(--line);
 }
+button {
+  appearance: none;
+  color: var(--black);
+  background: var(--green);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
