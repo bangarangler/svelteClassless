@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=Quattrocento:400|Inconsolata:400|Calligraffitti:400");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento:400|Inconsolata:400|Calligraffitti:400|Exo:400");
 /* FONTS */
 :root {
   /* COLORS */
@@ -254,4 +254,64 @@ button.small {
   --headerBG: var(--darkGray);
   --btnTextColor: var(--black);
   --footerBG: var(--darkGray);
+}
+.oled {
+  --black: #000;
+  --cardBG: var(--darkGray);
+  --headerBG: var(--darkGray);
+  --footerBG: var(--darkGray);
+}
+/* THEME */
+.theme {
+  /* COLORS */
+  --green: #4fc4cf;
+  --red: #ff5470;
+  --yellow: #fbdd74;
+  --black: #181818;
+  --darkBlue: #994ff3;
+  --gray: #bfbfbf;
+  --lightGray: #f2f4f6;
+  --white: #fff;
+  --darkGray: #222;
+
+  /* COLORS INTENTIONS */
+  --primary: var(--green);
+  --danger: var(--red);
+  /* --background: var(--lightGray); */
+  --background: var(--yellow);
+  --textColor: var(--black);
+  --lineColor: var(--gray);
+  --cardBG: var(--white);
+  --headerBG: var(--black);
+  --btnTextColor: var(--textColor);
+  --footerBG: var(--black);
+
+  /* STYLES */
+  --line: 1px solid var(--lineColor);
+  /* --line: 1px solid var(--yellow); */
+
+  /* TYPE */
+  --headingFont: "Exo", sans-serif;
+  --bodyFont: "Inconsolata", monospace;
+  --slantText: "Calligraffitti", cursive;
+  --baseFontSize: 110%;
+
+  /* SIZING FOR NON DEFAULT STYLING */
+  --h1: 4.209em;
+  --h2: 3.157em;
+  --h3: 2.369em;
+  --h4: 1.777em;
+  --h5: 1.333em;
+  --smallTextSize: 0.75em;
+
+  /* ELEVATION LEVELS */
+  --level1: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level2: 0 6px 8px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level3: 0 12px 17px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level4: 0 22px 27px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* POSITIONING */
+  --containerPadding: 2.5%;
+  --headerHeight: 4rem;
+  --borderRadius: 25px;
 }
