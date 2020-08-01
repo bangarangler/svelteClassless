@@ -63,8 +63,6 @@ body {
   font-weight: 400;
   line-height: 1.65;
   background: var(--background);
-  /* TODO: remove this  */
-  padding-bottom: 300px;
 	color: var(--textColor);
 }
 
@@ -93,6 +91,24 @@ header nav a {
 /* handles spacing of nav items */
 header nav a + a {
 	margin-left: 10px;
+}
+
+footer {
+	--footerTextColor: var(--lightGray);
+
+	color: var(--footerTextColor);
+	background: var(--black);
+	padding: 2rem var(--containerPadding);
+	text-align: center;
+}
+
+footer a {
+	color: var(--footerTextColor)
+}
+
+footer p {
+	margin-bottom: 0;
+	max-width: none;
 }
 
 p {

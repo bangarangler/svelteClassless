@@ -9,6 +9,9 @@
     font-size: var(--baseFontSize);
     margin: 0;
   }
+  footer .fake-logo {
+    margin-bottom: 2%;
+  }
 </style>
 
 <header>
@@ -19,4 +22,10 @@
 <main class="layout">
   <slot />
 </main>
+
+<footer>
+  <h3 class="fake-logo">Fake Logo</h3>
+  <Nav {segment} />
+  <p>&copy; 2020 Jonathan Dain Palacio</p>
+</footer>
 
