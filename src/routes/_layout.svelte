@@ -2,6 +2,30 @@
   import Nav from "../components/Nav.svelte";
 
   export let segment;
+
+  /* const themes = [" ", "dark", "theme", "dark oled"]; */
+  const themes = ["", "dark", "theme"];
+  /* const icons = ["☀", "🌙", "⚡", "🎱"]; */
+  const icons = ["☀", "🌙", "⚡"];
+  let index = 0;
+  let updatedTheme;
+  let removed;
+  $: console.log("themes", themes[index]);
+  $: console.log("index", index);
+
+  function changeTheme(themes, index) {
+    updatedTheme = themes[index];
+    removed = themes.filter((th) => th !== updatedTheme);
+    switch (document.body.classList) {
+      case "":
+        document.body.classList.remove("");
+        break;
+    }
+    document.body.classList.add(updatedTheme);
+    /* document.body.classList.replace(themes[index - 1], updatedTheme); */
+  }
+  $: console.log("updatedTheme", updatedTheme);
+  $: console.log("removed", removed);
 </script>
 
 <style>
@@ -15,9 +39,19 @@
   }
 </style>
 
+/*
+<svelte:body class={themes[index]} />
+*/
 <header>
   <h1 class="fake-logo">Fake Logo</h1>
   <Nav {segment} />
+  <button
+    on:click={() => {
+      index = (index + 1) % themes.length;
+      changeTheme(themes, index);
+    }}>
+    {icons[index]}
+  </button>
 </header>
 
 <main class="layout">
